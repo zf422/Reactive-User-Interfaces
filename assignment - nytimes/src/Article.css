@@ -1,0 +1,57 @@
+.Article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: 0.5px solid #a9a9a9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.text {
+  flex-direction: column;
+  flex: 3;
+  padding-left: 30px;
+  padding-right: 60px;
+}
+
+.date{
+  color: #a9a9a9;
+  font-family: Arial;
+  font-size: 10px;
+  font-weight: bold;
+  flex: 0.7;
+  margin-top: 20px;
+}
+
+.title{
+  color: #0a0a0a;
+  font-size: 23px;
+  font-family: Georgia;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.title:hover{
+  text-decoration: underline;
+}
+
+.picture{
+  height: 20%;
+  width: 20%;
+  flex: 1.4;
+  margin-top: 20px;
+}
+
+.brief {
+color: #545454;
+font-size: 14px;
+font-family: Georgia;
+line-height: 1.5em;
+}
+
+.author{
+  color: #a9a9a9;
+  font-family: Arial;
+  font-size: 10px;
+  font-weight: bold;
+}
