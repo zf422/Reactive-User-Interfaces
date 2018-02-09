@@ -1,0 +1,9 @@
+.App {
+display: flex;
+flex-direction: row;
+flex: 1;
+margin: auto;
+padding-top: 20px;
+width: 50%;
+flex-wrap: wrap;
+}

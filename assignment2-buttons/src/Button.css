@@ -1,0 +1,15 @@
+.button {
+  width: 195px;
+  height: 55px;
+  background-color: white;
+  color: #217272;
+  border: 1px solid #076d6d;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+}
+
+.button:focus{
+  background-color: #00adad;
+  color: white;
+}
