@@ -8,24 +8,26 @@ class App extends Component {
     super(props);
 
   this.state = {
-  text: ''
+  activeText: ''
 };
     this.buttonPressed=this.buttonPressed.bind(this);
   }
 
-    buttonPressed(displayText){
+    buttonPressed(label){
       this.setState({
-    text: displayText
+    activeText: label
   });
 }
   render() {
+    const buttonNames = ['First Button', 'Second Button', 'Third Button'];
+    const buttons = buttonNames.map((label, i) => {
+        return <Button onClick={this.buttonPressed} label={label} key={i} activeText={this.state.activeText === label} />
+      });
     return (
       <div className="App">
-<Button label="First Button" displayText="You have selected: First Button" onClick={this.buttonPressed} />
-<Button label="Second Button" displayText="You have selected: Second Button" onClick={this.buttonPressed} />
-<Button label="Third Button" displayText="You have selected: Third Button" onClick={this.buttonPressed} />
+{buttons}
 <div className="container">
-<Display displayContent={this.state.text} />
+<Display displayLabel={this.state.activeText} />
 </div>
       </div> );
   }

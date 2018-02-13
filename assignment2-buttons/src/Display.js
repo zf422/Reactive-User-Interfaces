@@ -5,8 +5,7 @@ class Display extends Component {
   render() {
     return (
       <div className="display">
-{this.props.displayContent}
-      </div>
+You have selected: {this.props.displayLabel}</div>
     );
   }
 }

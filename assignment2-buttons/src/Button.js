@@ -8,14 +8,15 @@ class Button extends Component {
 
   }
 
-  buttonPressed(text){
-    this.props.onClick(this.props.displayText)
+  buttonPressed(label){
+    this.props.onClick(this.props.label)
   }
 
   render() {
+    const classes = this.props.activeText ? 'activeText' : 'inactiveText';
     return (
       <div className="App">
-<button className="button" onClick={this.buttonPressed}>{this.props.label}</button>
+<button className={'button ' + classes} onClick={this.buttonPressed}>{this.props.label}</button>
       </div>
     );
   }

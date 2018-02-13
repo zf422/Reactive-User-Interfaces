@@ -2,14 +2,14 @@
   width: 195px;
   height: 55px;
   background-color: white;
-  color: #217272;
+  color: #156b6b;
   border: 1px solid #076d6d;
   cursor: pointer;
   font-size: 16px;
   outline: none;
 }
 
-.button:focus{
+.button.activeText {
   background-color: #00adad;
   color: white;
 }
