@@ -1,7 +1,35 @@
 .App {
-display: flex;
-flex-direction: column;
+  width: 80%;
+  height: auto;
+  padding-top: 20px;
+  margin: auto;
+  display: flex;
+  flex: 1;
 }
 
 .Output {
+  flex: 0.5;
+  background-color: #000000;
+  color: #ffffff;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 30px;
+padding-right: 30px;
+}
+
+h3{
+  font-family: Helvetica;
+  font-size: 12px;
+  font-weight: lighter;
+  color: #929292
+}
+
+h2{
+    font-family: Helvetica;
+    font-size: 72px;
+}
+
+p {
+  font-family: Courier;
+  font-size: 20px;
 }

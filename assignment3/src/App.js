@@ -8,33 +8,62 @@ constructor(props){
   super(props);
   this.newChange=this.newChange.bind(this);
       this.state = {
-        message: ''
+        label: '' ,
+        value: '',
       };
 }
 
-    newChange(value, label){
-      let message = this.state.message;
-      message = value;
-      this.setState({
-        message
-      });
+newChange(label, value){
+  this.setState({
+    label: label,
+    value: value,
+  });
+
+            let evName = '';
+            let evLocation = '';
+            let evTime = '';
     }
 
   render() {
-    const inputFields = [{title:'Event Name'}, {title: 'Location'}, {title: 'Time'}];
-    const input = inputFields.map((input, i) => {
-        return <Input onChange={this.newChange} title={input.title} message={this.state.message} key={i} />
-      });
+    if (this.state.label === "Event Name"){
+      this.evName = this.state.value;
+    }
+
+    if (this.state.label === "Location"){
+      this.evLocation = this.state.value;
+    }
+
+    if (this.state.label === "Time"){
+      this.evTime= this.state.value;
+    }
+
     return (
       <div className="App">
       <div className="Input">
-        {input}
+        <Input onChange={this.newChange} label="Event Name" />
+        <Input onChange={this.newChange} label="Location"/>
+        <Input onChange={this.newChange} label="Time"/>
 </div>
-<Output content={this.state.message}/>
+
+<Output name={this.evName}
+location={this.evLocation}
+time= {this.evTime} />
+
 </div>
 
     );
   }
 }
+
+//not sure why this is not working :(
+
+App.defaultProps = {
+  value: {
+    "Event name": "IMA Spring Show 2018",
+    Location: "NYU Shanghai, 9th floor",
+    Time: "May 11th, 5pm - 7pm",
+  }
+
+};
 
 export default App;

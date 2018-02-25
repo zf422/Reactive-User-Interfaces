@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Input.css';
-import Output from './Output';
 
 class Input extends Component {
   constructor(props){
@@ -9,15 +8,15 @@ class Input extends Component {
   }
 
   onChange(e){
-    let value = e.target.value;
-    let label = e.target.label;
-    this.props.onChange(value, label);
+    let label = this.props.label
+    let value = e.target.value
+    this.props.onChange(label, value);
   }
       render() {
         return (
           <div className="Input">
-          <h2>{this.props.title}</h2>
-            <input type="text" onChange={this.onChange} value={this.props.message} label={this.props.title}></input>
+          <h3>{this.props.label}</h3>
+            <input type="text" onChange={this.onChange} value={this.props.value}></input>
           </div>
         );
       }

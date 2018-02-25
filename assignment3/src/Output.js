@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import Input from './Input';
 
 class Output extends Component {
   render() {
       return (
         <div className="Output">
-        {this.props.content}
+        <h2> {this.props.name}</h2>
+        <p> {this.props.location}</p>
+        <p>{this.props.time}</p>
         </div>
 
     );
