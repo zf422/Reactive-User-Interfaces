@@ -1,0 +1,8 @@
+
+.Searchbox input {
+  border: none;
+  outline: none;
+  width: 80%;
+  border-radius: 5px;
+  padding: 8px;
+}
