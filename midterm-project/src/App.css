@@ -8,25 +8,25 @@
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #d3d3d3;
+  background: #d3d3d3;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #b1b1b1;
-  }
+  background: #b1b1b1;
+}
 
-.contacts{
+.contacts {
   padding: 10px;
   border-bottom: 0.25px solid #1abc9c;
 }
@@ -57,7 +57,6 @@
   font-family: Roboto;
 }
 
-
 .checkboxText {
   display: flex;
   margin: auto;
@@ -69,15 +68,23 @@
 }
 
 .address {
-font-size: 14px;
-color: #4a4a4a;
+  font-size: 14px;
+  color: #4a4a4a;
 }
 
 .email {
-font-size: 14px;
-color: #4a4a4a;
+  font-size: 14px;
+  color: #4a4a4a;
 }
 
 select {
   outline: none;
+}
+
+.AddButton {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: transparent;
 }

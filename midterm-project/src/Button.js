@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import './Button.css';
+import React, { Component } from "react";
+import "./Button.css";
 
 class Button extends Component {
   constructor(props) {
-  super(props);
-  this.onClick=this.onClick.bind(this);
-}
+    super(props);
+    this.onClick = this.onClick.bind(this);
+  }
 
   onClick(label) {
     this.props.onClick(this.props.label);
@@ -14,7 +14,7 @@ class Button extends Component {
   render() {
     return (
       <div className="Button">
-      <button onClick={this.onClick}>{this.props.label}</button>
+        <button onClick={this.onClick}>{this.props.label}</button>
       </div>
     );
   }

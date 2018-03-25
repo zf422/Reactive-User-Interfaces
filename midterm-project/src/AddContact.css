@@ -1,0 +1,30 @@
+.AddContact {
+  padding: 20px;
+  border: 1px solid #1abc9c;
+}
+
+.AddContact input {
+  border: none;
+  border-bottom: 1px solid #d3d3d3;
+  outline: none;
+  width: 80%;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.AddContact input:focus {
+  border: none;
+  border-bottom: 1px solid #1abc9c;
+  outline: none;
+  width: 80%;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.Cancel {
+  cursor: pointer;
+}
+
+.Cancel:hover {
+  text-decoration: underline;
+}
