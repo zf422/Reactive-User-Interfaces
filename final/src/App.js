@@ -122,7 +122,7 @@ class App extends Component {
           });
         } else if (result.icon === "rain") {
           this.setState({
-            weatherIcon: "weatherIcons/wi-day-rain.svg"
+            weatherIcon: "weatherIcons/rain.svg"
           });
         } else if (result.icon === "cloudy") {
           this.setState({
@@ -245,7 +245,7 @@ class App extends Component {
         });
       } else if (response.icon === "rain") {
         this.setState({
-          weatherIcon: "weatherIcons/wi-day-rain.svg"
+          weatherIcon: "weatherIcons/rain.svg"
         });
       } else if (response.icon === "cloudy") {
         this.setState({
