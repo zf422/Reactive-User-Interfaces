@@ -20,11 +20,8 @@ class App extends Component {
       search: "",
       location: "",
       clothes: "",
-      clothes2: "",
       iconCloth: "",
-      iconCloth2: "",
       alt: "",
-      alt2: "",
       weatherIcon: "",
       units: "us",
       active: "imperial"
