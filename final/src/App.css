@@ -1,0 +1,136 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  width: 365px;
+  height: 657px;
+  font-family: Roboto;
+  text-align: center;
+  border: solid 1px white;
+  display: block;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: linear-gradient(#7ec0ee, #ffae42);
+  color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d3d3d3;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b1b1b1;
+}
+.first {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.forecast {
+  flex: 1;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 20px;
+  font-size: 12px;
+  height: 300px;
+}
+
+.clothesRec {
+  flex: 1;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  font-size: 12px;
+  border-left: solid 0.5px white;
+}
+
+.image {
+  padding-top: 20px;
+}
+
+.second {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-size: 10px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.sub-second {
+  flex-direction: column;
+  border-left: solid 0.5px white;
+  padding: 10px;
+}
+
+.iconTemp {
+  display: flex;
+  flex-direction: row;
+  flex: 0.8;
+}
+
+.tempCurrent {
+  flex: 1;
+}
+
+.weatherIcons {
+  height: 50%;
+  width: 50%;
+}
+
+.hourlyIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.textboxHourly {
+  height: 50px;
+  width: 50px;
+}
+
+.imageHourly {
+  height: 40px;
+  width: 50px;
+}
+
+.header {
+  padding-bottom: 20px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  background-color: rgba(255,255,255, 0.2);
+  color: #fff;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  outline: none;
+}
+
+button.active {
+  width: 100px;
+  height: 30px;
+  background-color: rgba(255,255,255, 1);
+  color: rgba(126,192,238,1);
+  border: 1px solid rgba(255,255,255, 0.2);
+  cursor: pointer;
+  font-size: 14px;
+  outline: none;
+}
