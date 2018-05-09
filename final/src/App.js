@@ -71,7 +71,7 @@ class App extends Component {
             iconCloth: "icons/scarf.png",
             alt: "scarf-icon"
           });
-        } else if (result.temperature >= 75 && result.uvIndex >= 4) {
+        } else if (result.temperature >= 70 && result.uvIndex >= 4) {
           this.setState({
             clothes: "Shorts",
             iconCloth: "icons/shorts.png",
@@ -195,7 +195,7 @@ class App extends Component {
           iconCloth: "icons/scarf.png",
           alt: "scarf-icon"
         });
-      } else if (response.temperature >= 75 && response.uvIndex >= 4) {
+      } else if (response.temperature >= 70 && response.uvIndex >= 4) {
         this.setState({
           clothes: "Shorts",
           iconCloth: "icons/shorts.png",
